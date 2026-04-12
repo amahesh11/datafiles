@@ -1,0 +1,2 @@
+Copy[[:space:]]of[[:space:]]multivariate_informer.ipynb filter=lfs diff=lfs merge=lfs -text
+my_temp_file.txt filter=lfs diff=lfs merge=lfs -text
