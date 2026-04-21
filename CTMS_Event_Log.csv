@@ -1,0 +1,214 @@
+Audit_ID,Timestamp,User,Object,Action,Record_ID,Site_ID,Field_Name,Old_Value,New_Value,Event_Description,Subject_ID
+AUD-1000,1/7/2026 21:00,c.davis_crc,Subject,Create,SUB-4001,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4001
+AUD-1001,1/11/2026 0:00,m.jones_crc,Subject,Update,SUB-4001,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4001
+AUD-1002,1/11/2026 1:00,j.smith_crc,Subject,Update,SUB-4001,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4001
+AUD-1003,1/11/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8003,SITE-101,visit_status__v,,Completed,Screening visit completed for SUB-4001,SUB-4001
+AUD-1004,1/13/2026 0:00,central_lab_system,Subject,Update,SUB-4001,SITE-101,lab_results__c,,"LDL-C: 93 mg/dL, TG: 218 mg/dL, HbA1c: 7.0%",Central lab results received from screening visit,SUB-4001
+AUD-1005,1/14/2026 0:00,c.davis_crc,Subject,Update,SUB-4001,SITE-101,status__v,Screening,Screen_Failure,Subject failed Inclusion Criterion #3,SUB-4001
+AUD-1006,1/14/2026 0:05,j.smith_crc,Subject,Update,SUB-4001,SITE-101,failure_reason__c,,Inclusion Criterion #3,LDL-C only 65 mg/dL - below threshold,SUB-4001
+AUD-1007,1/31/2026 3:00,m.jones_crc,Subject,Create,SUB-4002,SITE-102,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4002
+AUD-1008,2/4/2026 0:00,m.jones_crc,Subject,Update,SUB-4002,SITE-102,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4002
+AUD-1009,2/4/2026 1:00,c.davis_crc,Subject,Update,SUB-4002,SITE-102,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4002
+AUD-1010,2/4/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8010,SITE-102,visit_status__v,,Completed,Screening visit completed for SUB-4002,SUB-4002
+AUD-1011,2/6/2026 0:00,central_lab_system,Subject,Update,SUB-4002,SITE-102,lab_results__c,,"LDL-C: 122 mg/dL, TG: 231 mg/dL, HbA1c: 6.1%",Central lab results received from screening visit,SUB-4002
+AUD-1012,2/11/2026 22:00,j.smith_crc,Subject,Update,SUB-4002,SITE-102,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4002
+AUD-1013,2/12/2026 0:00,ixrs_system,Subject,Update,SUB-4002,SITE-102,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4002
+AUD-1014,2/12/2026 0:00,ixrs_system,Subject,Update,SUB-4002,SITE-102,randomization_id__c,,RX-91014,Assigned to One_Dose_125mg group,SUB-4002
+AUD-1015,2/12/2026 1:00,c.davis_crc,Study Visit,Create,VISIT-8015,SITE-102,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4002,SUB-4002
+AUD-1016,2/12/2026 2:00,j.smith_crc,Subject,Update,SUB-4002,SITE-102,drug_administration__c,,Dose 1 administered - One_Dose_125mg,Study drug administered via SC injection - abdomen left side,SUB-4002
+AUD-1040,1/10/2026 10:00,k.williams_crc,Subject,Create,SUB-4003,SITE-105,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4003
+AUD-1041,1/14/2026 0:00,j.smith_crc,Subject,Update,SUB-4003,SITE-105,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4003
+AUD-1042,1/14/2026 1:00,j.smith_crc,Subject,Update,SUB-4003,SITE-105,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4003
+AUD-1043,1/14/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8043,SITE-105,visit_status__v,,Completed,Screening visit completed for SUB-4003,SUB-4003
+AUD-1044,1/16/2026 0:00,central_lab_system,Subject,Update,SUB-4003,SITE-105,lab_results__c,,"LDL-C: 93 mg/dL, TG: 206 mg/dL, HbA1c: 5.6%",Central lab results received from screening visit,SUB-4003
+AUD-1045,1/25/2026 22:00,j.smith_crc,Subject,Update,SUB-4003,SITE-105,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4003
+AUD-1046,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4003,SITE-105,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4003
+AUD-1047,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4003,SITE-105,randomization_id__c,,RX-91047,Assigned to One_Dose_125mg group,SUB-4003
+AUD-1048,1/26/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8048,SITE-105,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4003,SUB-4003
+AUD-1049,1/26/2026 2:00,j.smith_crc,Subject,Update,SUB-4003,SITE-105,drug_administration__c,,Dose 1 administered - One_Dose_125mg,Study drug administered via SC injection - abdomen left side,SUB-4003
+AUD-1929,1/30/2026 0:00,lab_system,Specimen,Create,SPEC-8009,SITE-105,specimen_status__v,,Collected,Blood specimen collected for SUB-4003 - LDL-C and PCSK9 analysis,SUB-4003
+AUD-1911,2/1/2026 0:00,lab_system,Specimen,Create,SPEC-8003,SITE-105,specimen_status__v,,Collected,Blood specimen collected for SUB-4003 - LDL-C and PCSK9 analysis,SUB-4003
+AUD-1051,2/2/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8051,SITE-105,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4003 on 2026-02-09,SUB-4003
+AUD-1052,2/7/2026 0:00,j.smith_crc,Study Visit,Update,VISIT-8051,SITE-105,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4003,SUB-4003
+AUD-1081,1/9/2026 23:00,c.davis_crc,Subject,Create,SUB-4004,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4004
+AUD-1082,1/13/2026 0:00,c.davis_crc,Subject,Update,SUB-4004,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4004
+AUD-1083,1/13/2026 1:00,j.smith_crc,Subject,Update,SUB-4004,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4004
+AUD-1084,1/13/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8084,SITE-101,visit_status__v,,Completed,Screening visit completed for SUB-4004,SUB-4004
+AUD-1085,1/15/2026 0:00,central_lab_system,Subject,Update,SUB-4004,SITE-101,lab_results__c,,"LDL-C: 118 mg/dL, TG: 320 mg/dL, HbA1c: 8.6%",Central lab results received from screening visit,SUB-4004
+AUD-1086,1/25/2026 22:00,c.davis_crc,Subject,Update,SUB-4004,SITE-101,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4004
+AUD-1087,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4004,SITE-101,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4004
+AUD-1088,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4004,SITE-101,randomization_id__c,,RX-91088,Assigned to Two_Dose_200mg group,SUB-4004
+AUD-1089,1/26/2026 1:00,c.davis_crc,Study Visit,Create,VISIT-8089,SITE-101,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4004,SUB-4004
+AUD-1090,1/26/2026 2:00,c.davis_crc,Subject,Update,SUB-4004,SITE-101,drug_administration__c,,Dose 1 administered - Two_Dose_200mg,Study drug administered via SC injection - abdomen left side,SUB-4004
+AUD-1092,2/2/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8092,SITE-101,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4004 on 2026-02-09,SUB-4004
+AUD-1093,2/13/2026 0:00,j.smith_crc,Study Visit,Update,VISIT-8092,SITE-101,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4004,SUB-4004
+AUD-1123,1/3/2026 5:00,j.smith_crc,Subject,Create,SUB-4005,SITE-105,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4005
+AUD-1124,1/7/2026 0:00,m.jones_crc,Subject,Update,SUB-4005,SITE-105,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4005
+AUD-1125,1/7/2026 1:00,c.davis_crc,Subject,Update,SUB-4005,SITE-105,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4005
+AUD-1126,1/7/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8126,SITE-105,visit_status__v,,Completed,Screening visit completed for SUB-4005,SUB-4005
+AUD-1127,1/9/2026 0:00,central_lab_system,Subject,Update,SUB-4005,SITE-105,lab_results__c,,"LDL-C: 102 mg/dL, TG: 187 mg/dL, HbA1c: 6.0%",Central lab results received from screening visit,SUB-4005
+AUD-1128,1/17/2026 22:00,j.smith_crc,Subject,Update,SUB-4005,SITE-105,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4005
+AUD-1129,1/18/2026 0:00,ixrs_system,Subject,Update,SUB-4005,SITE-105,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4005
+AUD-1130,1/18/2026 0:00,ixrs_system,Subject,Update,SUB-4005,SITE-105,randomization_id__c,,RX-91130,Assigned to Two_Dose_250mg group,SUB-4005
+AUD-1131,1/18/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8131,SITE-105,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4005,SUB-4005
+AUD-1132,1/18/2026 2:00,c.davis_crc,Subject,Update,SUB-4005,SITE-105,drug_administration__c,,Dose 1 administered - Two_Dose_250mg,Study drug administered via SC injection - abdomen left side,SUB-4005
+AUD-1134,1/25/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8134,SITE-105,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4005 on 2026-02-01,SUB-4005
+AUD-1135,2/1/2026 0:00,j.smith_crc,Study Visit,Update,VISIT-8134,SITE-105,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4005,SUB-4005
+AUD-1136,2/10/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8136,SITE-105,visit_status__v,,Scheduled,FU2_Day_30 scheduled for SUB-4005 on 2026-02-17,SUB-4005
+AUD-1199,12/29/2025 14:00,k.williams_crc,Subject,Create,SUB-4007,SITE-103,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4007
+AUD-1200,1/2/2026 0:00,m.jones_crc,Subject,Update,SUB-4007,SITE-103,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4007
+AUD-1201,1/2/2026 1:00,c.davis_crc,Subject,Update,SUB-4007,SITE-103,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4007
+AUD-1202,1/2/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8202,SITE-103,visit_status__v,,Completed,Screening visit completed for SUB-4007,SUB-4007
+AUD-1203,1/4/2026 0:00,central_lab_system,Subject,Update,SUB-4007,SITE-103,lab_results__c,,"LDL-C: 109 mg/dL, TG: 227 mg/dL, HbA1c: 8.2%",Central lab results received from screening visit,SUB-4007
+AUD-1204,1/5/2026 0:00,j.smith_crc,Subject,Update,SUB-4007,SITE-103,status__v,Screening,Screen_Failure,Subject failed Inclusion Criterion #3,SUB-4007
+AUD-1205,1/5/2026 0:05,c.davis_crc,Subject,Update,SUB-4007,SITE-103,failure_reason__c,,Inclusion Criterion #3,LDL-C only 65 mg/dL - below threshold,SUB-4007
+AUD-1237,1/30/2026 11:00,c.davis_crc,Subject,Create,SUB-4009,SITE-102,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4009
+AUD-1238,2/3/2026 0:00,j.smith_crc,Subject,Update,SUB-4009,SITE-102,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4009
+AUD-1239,2/3/2026 1:00,c.davis_crc,Subject,Update,SUB-4009,SITE-102,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4009
+AUD-1240,2/3/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8240,SITE-102,visit_status__v,,Completed,Screening visit completed for SUB-4009,SUB-4009
+AUD-1241,2/5/2026 0:00,central_lab_system,Subject,Update,SUB-4009,SITE-102,lab_results__c,,"LDL-C: 116 mg/dL, TG: 337 mg/dL, HbA1c: 6.0%",Central lab results received from screening visit,SUB-4009
+AUD-1242,2/10/2026 22:00,j.smith_crc,Subject,Update,SUB-4009,SITE-102,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4009
+AUD-1243,2/11/2026 0:00,ixrs_system,Subject,Update,SUB-4009,SITE-102,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4009
+AUD-1244,2/11/2026 0:00,ixrs_system,Subject,Update,SUB-4009,SITE-102,randomization_id__c,,RX-91244,Assigned to One_Dose_300mg group,SUB-4009
+AUD-1245,2/11/2026 1:00,c.davis_crc,Study Visit,Create,VISIT-8245,SITE-102,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4009,SUB-4009
+AUD-1246,2/11/2026 2:00,c.davis_crc,Subject,Update,SUB-4009,SITE-102,drug_administration__c,,Dose 1 administered - One_Dose_300mg,Study drug administered via SC injection - abdomen left side,SUB-4009
+AUD-1255,1/10/2026 14:00,j.smith_crc,Subject,Create,SUB-4010,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4010
+AUD-1256,1/14/2026 0:00,j.smith_crc,Subject,Update,SUB-4010,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4010
+AUD-1257,1/14/2026 1:00,j.smith_crc,Subject,Update,SUB-4010,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4010
+AUD-1258,1/14/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8258,SITE-101,visit_status__v,,Completed,Screening visit completed for SUB-4010,SUB-4010
+AUD-1259,1/16/2026 0:00,central_lab_system,Subject,Update,SUB-4010,SITE-101,lab_results__c,,"LDL-C: 134 mg/dL, TG: 297 mg/dL, HbA1c: 6.1%",Central lab results received from screening visit,SUB-4010
+AUD-1260,1/25/2026 22:00,j.smith_crc,Subject,Update,SUB-4010,SITE-101,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4010
+AUD-1261,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4010,SITE-101,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4010
+AUD-1262,1/26/2026 0:00,ixrs_system,Subject,Update,SUB-4010,SITE-101,randomization_id__c,,RX-91262,Assigned to One_Dose_300mg group,SUB-4010
+AUD-1263,1/26/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8263,SITE-101,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4010,SUB-4010
+AUD-1264,1/26/2026 2:00,c.davis_crc,Subject,Update,SUB-4010,SITE-101,drug_administration__c,,Dose 1 administered - One_Dose_300mg,Study drug administered via SC injection - abdomen left side,SUB-4010
+AUD-1266,2/2/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8266,SITE-101,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4010 on 2026-02-09,SUB-4010
+AUD-1267,2/10/2026 0:00,c.davis_crc,Study Visit,Update,VISIT-8266,SITE-101,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4010,SUB-4010
+AUD-1926,1/29/2026 0:00,lab_system,Specimen,Create,SPEC-8008,SITE-101,specimen_status__v,,Collected,Blood specimen collected for SUB-4013 - LDL-C and PCSK9 analysis,SUB-4013
+AUD-1433,1/7/2026 22:00,j.smith_crc,Subject,Create,SUB-4015,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4015
+AUD-1434,1/11/2026 0:00,j.smith_crc,Subject,Update,SUB-4015,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4015
+AUD-1435,1/11/2026 1:00,c.davis_crc,Subject,Update,SUB-4015,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4015
+AUD-1436,1/11/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8436,SITE-101,visit_status__v,,Completed,Screening visit completed for SUB-4015,SUB-4015
+AUD-1437,1/13/2026 0:00,central_lab_system,Subject,Update,SUB-4015,SITE-101,lab_results__c,,"LDL-C: 141 mg/dL, TG: 151 mg/dL, HbA1c: 7.4%",Central lab results received from screening visit,SUB-4015
+AUD-1438,1/19/2026 22:00,c.davis_crc,Subject,Update,SUB-4015,SITE-101,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4015
+AUD-1439,1/20/2026 0:00,ixrs_system,Subject,Update,SUB-4015,SITE-101,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4015
+AUD-1440,1/20/2026 0:00,ixrs_system,Subject,Update,SUB-4015,SITE-101,randomization_id__c,,RX-91440,Assigned to Placebo group,SUB-4015
+AUD-1441,1/20/2026 1:00,c.davis_crc,Study Visit,Create,VISIT-8441,SITE-101,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4015,SUB-4015
+AUD-1442,1/20/2026 2:00,c.davis_crc,Subject,Update,SUB-4015,SITE-101,drug_administration__c,,Dose 1 administered - Placebo,Study drug administered via SC injection - abdomen left side,SUB-4015
+AUD-1444,1/27/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8444,SITE-101,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4015 on 2026-02-03,SUB-4015
+AUD-1445,2/5/2026 0:00,j.smith_crc,Study Visit,Update,VISIT-8444,SITE-101,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4015,SUB-4015
+AUD-1446,2/12/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8446,SITE-101,visit_status__v,,Scheduled,FU2_Day_30 scheduled for SUB-4015 on 2026-02-19,SUB-4015
+AUD-1468,1/7/2026 23:00,c.davis_crc,Subject,Create,SUB-4016,SITE-103,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4016
+AUD-1469,1/11/2026 0:00,c.davis_crc,Subject,Update,SUB-4016,SITE-103,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4016
+AUD-1470,1/11/2026 1:00,j.smith_crc,Subject,Update,SUB-4016,SITE-103,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4016
+AUD-1471,1/11/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8471,SITE-103,visit_status__v,,Completed,Screening visit completed for SUB-4016,SUB-4016
+AUD-1472,1/13/2026 0:00,central_lab_system,Subject,Update,SUB-4016,SITE-103,lab_results__c,,"LDL-C: 141 mg/dL, TG: 345 mg/dL, HbA1c: 8.3%",Central lab results received from screening visit,SUB-4016
+AUD-1473,1/24/2026 22:00,j.smith_crc,Subject,Update,SUB-4016,SITE-103,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4016
+AUD-1474,1/25/2026 0:00,ixrs_system,Subject,Update,SUB-4016,SITE-103,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4016
+AUD-1475,1/25/2026 0:00,ixrs_system,Subject,Update,SUB-4016,SITE-103,randomization_id__c,,RX-91475,Assigned to Placebo group,SUB-4016
+AUD-1476,1/25/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8476,SITE-103,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4016,SUB-4016
+AUD-1477,1/25/2026 2:00,j.smith_crc,Subject,Update,SUB-4016,SITE-103,drug_administration__c,,Dose 1 administered - Placebo,Study drug administered via SC injection - abdomen left side,SUB-4016
+AUD-1479,2/1/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8479,SITE-103,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4016 on 2026-02-08,SUB-4016
+AUD-1480,2/14/2026 0:00,j.smith_crc,Study Visit,Update,VISIT-8479,SITE-103,visit_status__v,Scheduled,Completed,FU1_Day_14 completed for SUB-4016,SUB-4016
+AUD-1516,1/23/2026 10:00,j.smith_crc,Subject,Create,SUB-4018,SITE-103,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4018
+AUD-1517,1/27/2026 0:00,m.jones_crc,Subject,Update,SUB-4018,SITE-103,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4018
+AUD-1518,1/27/2026 1:00,c.davis_crc,Subject,Update,SUB-4018,SITE-103,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4018
+AUD-1519,1/27/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8519,SITE-103,visit_status__v,,Completed,Screening visit completed for SUB-4018,SUB-4018
+AUD-1520,1/29/2026 0:00,central_lab_system,Subject,Update,SUB-4018,SITE-103,lab_results__c,,"LDL-C: 103 mg/dL, TG: 224 mg/dL, HbA1c: 9.0%",Central lab results received from screening visit,SUB-4018
+AUD-1521,2/3/2026 22:00,j.smith_crc,Subject,Update,SUB-4018,SITE-103,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4018
+AUD-1522,2/4/2026 0:00,ixrs_system,Subject,Update,SUB-4018,SITE-103,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4018
+AUD-1523,2/4/2026 0:00,ixrs_system,Subject,Update,SUB-4018,SITE-103,randomization_id__c,,RX-91523,Assigned to One_Dose_250mg group,SUB-4018
+AUD-1524,2/4/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8524,SITE-103,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4018,SUB-4018
+AUD-1525,2/4/2026 2:00,c.davis_crc,Subject,Update,SUB-4018,SITE-103,drug_administration__c,,Dose 1 administered - One_Dose_250mg,Study drug administered via SC injection - abdomen left side,SUB-4018
+AUD-1527,2/11/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8527,SITE-103,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4018 on 2026-02-18,SUB-4018
+AUD-1611,1/19/2026 21:00,c.davis_crc,Subject,Create,SUB-4021,SITE-102,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4021
+AUD-1612,1/23/2026 0:00,c.davis_crc,Subject,Update,SUB-4021,SITE-102,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4021
+AUD-1613,1/23/2026 1:00,j.smith_crc,Subject,Update,SUB-4021,SITE-102,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4021
+AUD-1614,1/23/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8614,SITE-102,visit_status__v,,Completed,Screening visit completed for SUB-4021,SUB-4021
+AUD-1615,1/25/2026 0:00,central_lab_system,Subject,Update,SUB-4021,SITE-102,lab_results__c,,"LDL-C: 113 mg/dL, TG: 285 mg/dL, HbA1c: 5.8%",Central lab results received from screening visit,SUB-4021
+AUD-1935,1/29/2026 0:00,lab_system,Specimen,Create,SPEC-8011,SITE-102,specimen_status__v,,Collected,Blood specimen collected for SUB-4021 - LDL-C and PCSK9 analysis,SUB-4021
+AUD-1616,2/3/2026 22:00,c.davis_crc,Subject,Update,SUB-4021,SITE-102,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4021
+AUD-1617,2/4/2026 0:00,ixrs_system,Subject,Update,SUB-4021,SITE-102,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4021
+AUD-1618,2/4/2026 0:00,ixrs_system,Subject,Update,SUB-4021,SITE-102,randomization_id__c,,RX-91618,Assigned to One_Dose_300mg group,SUB-4021
+AUD-1619,2/4/2026 1:00,c.davis_crc,Study Visit,Create,VISIT-8619,SITE-102,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4021,SUB-4021
+AUD-1620,2/4/2026 2:00,c.davis_crc,Subject,Update,SUB-4021,SITE-102,drug_administration__c,,Dose 1 administered - One_Dose_300mg,Study drug administered via SC injection - abdomen left side,SUB-4021
+AUD-1622,2/11/2026 0:00,scheduling_system,Study Visit,Create,VISIT-8622,SITE-102,visit_status__v,,Scheduled,FU1_Day_14 scheduled for SUB-4021 on 2026-02-18,SUB-4021
+AUD-1650,1/29/2026 17:00,m.jones_crc,Subject,Create,SUB-4022,SITE-105,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4022
+AUD-1651,2/2/2026 0:00,j.smith_crc,Subject,Update,SUB-4022,SITE-105,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4022
+AUD-1652,2/2/2026 1:00,j.smith_crc,Subject,Update,SUB-4022,SITE-105,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4022
+AUD-1653,2/2/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8653,SITE-105,visit_status__v,,Completed,Screening visit completed for SUB-4022,SUB-4022
+AUD-1654,2/4/2026 0:00,central_lab_system,Subject,Update,SUB-4022,SITE-105,lab_results__c,,"LDL-C: 103 mg/dL, TG: 153 mg/dL, HbA1c: 7.7%",Central lab results received from screening visit,SUB-4022
+AUD-1655,2/11/2026 22:00,j.smith_crc,Subject,Update,SUB-4022,SITE-105,prescreen_eligible__c,,TRUE,All inclusion/exclusion criteria verified - eligible for randomization,SUB-4022
+AUD-1656,2/12/2026 0:00,ixrs_system,Subject,Update,SUB-4022,SITE-105,status__v,Screening,Enrolled,Subject randomized via IXRS,SUB-4022
+AUD-1657,2/12/2026 0:00,ixrs_system,Subject,Update,SUB-4022,SITE-105,randomization_id__c,,RX-91657,Assigned to Placebo group,SUB-4022
+AUD-1658,2/12/2026 1:00,j.smith_crc,Study Visit,Create,VISIT-8658,SITE-105,visit_status__v,,In_Progress,Day 1 randomization visit started for SUB-4022,SUB-4022
+AUD-1659,2/12/2026 2:00,j.smith_crc,Subject,Update,SUB-4022,SITE-105,drug_administration__c,,Dose 1 administered - Placebo,Study drug administered via SC injection - abdomen left side,SUB-4022
+AUD-1693,1/28/2026 10:00,k.williams_crc,Subject,Create,SUB-4023,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4023
+AUD-1694,2/1/2026 0:00,c.davis_crc,Subject,Update,SUB-4023,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4023
+AUD-1695,2/1/2026 1:00,j.smith_crc,Subject,Update,SUB-4023,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4023
+AUD-1696,2/1/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8696,SITE-101,visit_status__v,,Completed,Screening visit completed for SUB-4023,SUB-4023
+AUD-1697,2/3/2026 0:00,central_lab_system,Subject,Update,SUB-4023,SITE-101,lab_results__c,,"LDL-C: 139 mg/dL, TG: 200 mg/dL, HbA1c: 8.2%",Central lab results received from screening visit,SUB-4023
+AUD-1698,2/4/2026 0:00,j.smith_crc,Subject,Update,SUB-4023,SITE-101,status__v,Screening,Screen_Failure,Subject failed Exclusion Criterion #6,SUB-4023
+AUD-1699,2/4/2026 0:05,c.davis_crc,Subject,Update,SUB-4023,SITE-101,failure_reason__c,,Exclusion Criterion #6,MACE 4 months ago - recent MI,SUB-4023
+AUD-1739,2/8/2026 6:00,j.smith_crc,Subject,Create,SUB-4025,SITE-105,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4025
+AUD-1740,2/12/2026 0:00,j.smith_crc,Subject,Update,SUB-4025,SITE-105,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4025
+AUD-1741,2/12/2026 1:00,j.smith_crc,Subject,Update,SUB-4025,SITE-105,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4025
+AUD-1742,2/12/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8742,SITE-105,visit_status__v,,Completed,Screening visit completed for SUB-4025,SUB-4025
+AUD-1944,2/14/2026 0:00,lab_system,Specimen,Create,SPEC-8014,SITE-105,specimen_status__v,,Collected,Blood specimen collected for SUB-4025 - LDL-C and PCSK9 analysis,SUB-4025
+AUD-1743,2/14/2026 0:00,central_lab_system,Subject,Update,SUB-4025,SITE-105,lab_results__c,,"LDL-C: 91 mg/dL, TG: 292 mg/dL, HbA1c: 5.8%",Central lab results received from screening visit,SUB-4025
+AUD-1818,2/4/2026 10:00,c.davis_crc,Subject,Create,SUB-4027,SITE-102,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4027
+AUD-1819,2/8/2026 0:00,c.davis_crc,Subject,Update,SUB-4027,SITE-102,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4027
+AUD-1820,2/8/2026 1:00,c.davis_crc,Subject,Update,SUB-4027,SITE-102,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4027
+AUD-1821,2/8/2026 2:00,j.smith_crc,Study Visit,Create,VISIT-8821,SITE-102,visit_status__v,,Completed,Screening visit completed for SUB-4027,SUB-4027
+AUD-1822,2/10/2026 0:00,central_lab_system,Subject,Update,SUB-4027,SITE-102,lab_results__c,,"LDL-C: 92 mg/dL, TG: 235 mg/dL, HbA1c: 5.9%",Central lab results received from screening visit,SUB-4027
+AUD-1823,2/11/2026 0:00,c.davis_crc,Subject,Update,SUB-4027,SITE-102,status__v,Screening,Screen_Failure,Subject failed Exclusion Criterion #5,SUB-4027
+AUD-1824,2/11/2026 0:05,j.smith_crc,Subject,Update,SUB-4027,SITE-102,failure_reason__c,,Exclusion Criterion #5,Hemorrhagic stroke 2 years ago,SUB-4027
+AUD-1825,2/4/2026 23:00,c.davis_crc,Subject,Create,SUB-4028,SITE-105,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-4028
+AUD-1826,2/8/2026 0:00,m.jones_crc,Subject,Update,SUB-4028,SITE-105,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-4028
+AUD-1827,2/8/2026 1:00,c.davis_crc,Subject,Update,SUB-4028,SITE-105,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-4028
+AUD-1828,2/8/2026 2:00,c.davis_crc,Study Visit,Create,VISIT-8828,SITE-105,visit_status__v,,Completed,Screening visit completed for SUB-4028,SUB-4028
+AUD-1829,2/10/2026 0:00,central_lab_system,Subject,Update,SUB-4028,SITE-105,lab_results__c,,"LDL-C: 105 mg/dL, TG: 213 mg/dL, HbA1c: 7.0%",Central lab results received from screening visit,SUB-4028
+AUD-1830,2/11/2026 0:00,c.davis_crc,Subject,Update,SUB-4028,SITE-105,status__v,Screening,Screen_Failure,Subject failed Exclusion Criterion #6,SUB-4028
+AUD-1831,2/11/2026 0:05,c.davis_crc,Subject,Update,SUB-4028,SITE-105,failure_reason__c,,Exclusion Criterion #6,MACE 4 months ago - recent MI,SUB-4028
+AUD-1133,1/18/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-8131,SITE-105,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4029
+AUD-1443,1/20/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-8441,SITE-101,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4030
+AUD-1478,1/25/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8476,SITE-103,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4030
+AUD-1091,1/26/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8089,SITE-101,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4030
+AUD-1265,1/26/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-8263,SITE-101,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4030
+AUD-1050,1/26/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8048,SITE-105,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4030
+AUD-1936,1/30/2026 0:00,central_lab_system,Specimen,Update,SPEC-8011,SITE-102,specimen_status__v,Collected,Received,Specimen received at central laboratory - temperature validated,SUB-4030
+AUD-1927,1/30/2026 0:00,central_lab_system,Specimen,Update,SPEC-8008,SITE-101,specimen_status__v,Collected,Received,Specimen received at central laboratory - temperature validated,SUB-4030
+AUD-1930,1/31/2026 0:00,central_lab_system,Specimen,Update,SPEC-8009,SITE-105,specimen_status__v,Collected,Received,Specimen received at central laboratory - temperature validated,SUB-4030
+AUD-1937,2/1/2026 0:00,central_lab_system,Specimen,Update,SPEC-8011,SITE-102,specimen_status__v,Received,Analyzed,"Analysis complete - LDL-C: 118 mg/dL, PCSK9: 108 ng/mL",SUB-4031
+AUD-1928,2/1/2026 0:00,central_lab_system,Specimen,Update,SPEC-8008,SITE-101,specimen_status__v,Received,Analyzed,"Analysis complete - LDL-C: 80 mg/dL, PCSK9: 254 ng/mL",SUB-4032
+AUD-1931,2/2/2026 0:00,central_lab_system,Specimen,Update,SPEC-8009,SITE-105,specimen_status__v,Received,Analyzed,"Analysis complete - LDL-C: 80 mg/dL, PCSK9: 314 ng/mL",SUB-4033
+AUD-1912,2/2/2026 0:00,central_lab_system,Specimen,Update,SPEC-8003,SITE-105,specimen_status__v,Collected,Received,Specimen received at central laboratory - temperature validated,SUB-4034
+AUD-1913,2/4/2026 0:00,central_lab_system,Specimen,Update,SPEC-8003,SITE-105,specimen_status__v,Received,Analyzed,"Analysis complete - LDL-C: 86 mg/dL, PCSK9: 341 ng/mL",SUB-4034
+AUD-1621,2/4/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8619,SITE-102,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4035
+AUD-1526,2/4/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-8524,SITE-103,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4035
+AUD-1054,2/9/2026 0:01,data_management,Data Query,Update,QRY-10053,SITE-105,query_type__v,,Data_Clarification,Vital signs reading appears inconsistent with previous visit,SUB-4036
+AUD-1053,2/11/2026 0:00,data_management,Data Query,Create,QRY-10053,SITE-105,query_status__v,,Open,Query raised for FU1_Day_14 - Vital signs reading appears inconsistent with previous visit,SUB-4036
+AUD-1247,2/11/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-8245,SITE-102,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4037
+AUD-1269,2/12/2026 0:01,data_management,Data Query,Update,QRY-10268,SITE-101,query_type__v,,Missing_Data,AE onset date not specified,SUB-4038
+AUD-1017,2/12/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8015,SITE-102,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4039
+AUD-1660,2/12/2026 5:00,j.smith_crc,Study Visit,Update,VISIT-8658,SITE-105,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-4040
+AUD-1094,2/13/2026 6:00,m.jones_cra,Protocol Deviation,Create,PD-6094,SITE-101,deviation_type__c,,Visit Window Violation,FU1_Day_14 occurred 4 days outside protocol window (±2 days),SUB-4041
+AUD-1095,2/13/2026 6:05,admin_quality_cra,Protocol Deviation,Update,PD-6094,SITE-101,severity__v,,Minor,Deviation severity assessed - 4 days late,SUB-4042
+AUD-1055,2/14/2026 0:00,c.davis_crc,Data Query,Update,QRY-10053,SITE-105,query_status__v,Open,Responded,Site provided response with source documentation,
+AUD-1481,2/14/2026 6:00,m.jones_cra,Protocol Deviation,Create,PD-6481,SITE-103,deviation_type__c,,Visit Window Violation,FU1_Day_14 occurred 6 days outside protocol window (±2 days),SUB-4030
+AUD-1482,2/14/2026 6:05,m.jones_cra,Protocol Deviation,Update,PD-6481,SITE-103,severity__v,,Major,Deviation severity assessed - 6 days late,SUB-4030
+AUD-2000,2/11/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-9000,SITE-102,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-5000
+AUD-2001,2/11/2026 5:45,c.davis_crc,Study Visit,Update,VISIT-9001,SITE-102,visit_status__v,In_Progress,Scheduled,14 Day Follow Up Visit,SUB-5000
+AUD-2002,3/5/2026 5:00,c.davis_crc,Protocol Deviation,Update,PD-7000,SITE-102,deviation_type__c,,Visit Window Violation,14 Day Follow Up Visit Window Violation,SUB-5000
+AUD-2003,2/8/2026 5:00,m.morgan_crc,Study Visit,Update,VISIT-9002,SITE-103,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-5001
+AUD-2004,2/8/2026 5:45,m.morgan_crc,Study Visit,Update,VISIT-9003,SITE-103,visit_status__v,In_Progress,Scheduled,14 Day Follow Up Visit,SUB-5001
+AUD-2005,2/23/2026 5:00,m.morgan_crc,Study Visit,Update,VISIT-9004,SITE-103,visit_status__v,Completed,Completed,14 Day Follow Up Visit,SUB-5001
+AUD-2006,2/11/2026 5:00,c.davis_crc,Study Visit,Update,VISIT-9000,SITE-102,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-5000
+AUD-2007,2/11/2026 5:45,c.davis_crc,Study Visit,Update,VISIT-9001,SITE-102,visit_status__v,In_Progress,Scheduled,14 Day Follow Up Visit,SUB-5000
+AUD-2008,3/5/2026 5:00,c.davis_crc,Protocol Deviation,Update,PD-7000,SITE-102,deviation_type__c,,Visit Window Violation,14 Day Follow Up Visit Window Violation,SUB-5000
+AUD-2009,2/8/2026 5:00,m.morgan_crc,Study Visit,Update,VISIT-9002,SITE-103,visit_status__v,In_Progress,Completed,Day 1 visit completed - subject monitored 4 hours post-injection,SUB-5001
+AUD-2010,2/8/2026 5:45,m.morgan_crc,Study Visit,Update,VISIT-9003,SITE-103,visit_status__v,In_Progress,Scheduled,14 Day Follow Up Visit,SUB-5001
+AUD-2011,2/23/2026 5:00,m.morgan_crc,Study Visit,Update,VISIT-9004,SITE-103,visit_status__v,Completed,Completed,14 Day Follow Up Visit,SUB-5001
+AUD-3000,1/7/2026 21:00,c.davis_crc,Subject,Create,SUB-11101,SITE-101,status__v,,Pre_Screen,Potential subject identified from referral database,SUB-11101
+AUD-3001,1/11/2026 0:00,m.jones_crc,Subject,Update,SUB-11101,SITE-101,status__v,Pre_Screen,Screening,Subject scheduled for screening visit,SUB-11101
+AUD-3002,1/11/2026 1:00,j.smith_crc,Subject,Update,SUB-11101,SITE-101,consent_status__v,,Consented,Informed consent obtained - ICF version 3.0,SUB-11101
